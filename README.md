@@ -5,10 +5,10 @@
 "Check out my Elon Musk Tribute Page! It's a website I made using HTML, CSS, and JavaScript. Learn about Elon Musk, his cool stuff like SpaceX and Tesla, and how he's changing the world. Come celebrate this amazing guy with me!"</h4>
 
 <a href="https://adityachatur.github.io/Elon_Musl_Tribute_page.github.ip/">Website Link</a>
-<h1 align="left">Task 2 -(Landing Page)</h1>
-<h4 align="left">
-Welcome to our awesome website! We've built a fantastic landing page using HTML, CSS, and JavaScript. Get ready to explore a mix of great design and cool features. Come and enjoy the creativity!</h4>
+<h1 align="left">Task 2 -(Temperature Convertor)</h1>
+<h4 align="left">This code creates a simple temperature converter with input fields for Celsius and Fahrenheit. As you input a value in one field, the other field's value is automatically updated based on the conversion formula. The styling is minimal, and the page is responsive to different screen sizes.
+</h4>
 
-<a href="https://adityachatur.github.io/Landing_page_temp.github.io/">Website Link</a>
+<a href="https://adityachatur.github.io/Temprature_Calculator.github.io/">Website Link</a>
 </p>
 
