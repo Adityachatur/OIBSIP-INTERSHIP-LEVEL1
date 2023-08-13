@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/66dcd5c2ff.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="light-mode  ">
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <!-- side bar start -->
+  
+    <div class="side-bar">
+        <span class="mode-toggle" onclick="toggleMode()" id="modeIcon"><i class="fa-solid fa-sun"></i></span>
+        <a href="#home"> <i class="fa-solid fa-house"></i></a>
+        <a href="#about"><i class="fa-solid fa-user"></i></a>
+        <a href="#portfolio"><i class="fa-solid fa-suitcase"></i></a>
+        <a href="#contact"> <i class="fa-solid fa-envelope"></i></a>
+        <a href=""> <i class="fa-solid fa-comments"></i></a>
+    </div>
+    <!-- side bar end -->
+
+
+    <section class="head " id="home">
+        <!-- <div class="popup" id="popup">
+            <div class="popup-content">
+              <span class="close-btn" id="closePopupBtn">&times;</span>
+              <h2>Download My CV</h2>
+              <p>      I am Aditya Anil Chatur, a Java Full Stack Web Developer with a passion for designing and building <br>attractive, compelling, and useful websites that create value for clients.<br> As a web developer, my goal is to deliver high-quality websites that meet and exceed client expectations. <br>I am an innovative and self-driven individual who always strives to achieve excellence in everything I do. <br>As a Java Full Stack Web Developer.I have worked on several projects that have enhanced my skills and knowledge.</p>
+        
+             <a href="./img/ADITYA_CHATUR_RESUME.pdf"><button  class="btn btn-slide-left">Download</button></a>
+            </div>
+          </div> -->
+        <div class="profile">
+            <div class="block"></div>
+            <img src="./img/personl.png" alt="" data-aos="zoom-in-down"   data-aos-duration="2000">
+            <div class="motivate-line" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <h2>I'M ADITYA CHATUR.</h2>
+                <h2 class="h2">WEB DEVELOPER</h2>
+                <p>I'm a Tunisian based web designer & front‑end developer <br>focused on crafting clean &
+                    user‑friendly experiences, <br>I am passionate about building excellent<br> software that
+                    improves the lives of those around me.</p>
+              <button class="btn btn-slide-left" id="showPopupBtn">READ MORE ABOUT</button>
+              
+            </div>
+        </div>
+    </section>
+    <section class="head1" id="about">
+
+        <div class="heading-title">
+            <h2>ABOUT</h2>
+            <div class="h2">ME</div>
+        </div>
+        <div class="content">
+
+            <div class="personal-info"  data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+
+                <div class="info">
+                    <h2>Personal Information</h2>
+                    <table>
+                        <tr>
+                            <th>Name:</th>
+                            <td>Aditya Chatur</td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td>Chakan, pune.</td>
+                        </tr>
+                        <tr>
+                            <th>DOB:</th>
+                            <td>25-JAN-2001</td>
+                        </tr>
+                        <tr>
+                            <th>Age:</th>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td>Adityachatur7996@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone:</th>
+                            <td>+91 9552314201</td>
+                        </tr>
+                        <tr>
+                            <th>Language:</th>
+                            <td>Hindi , Marathi , English</td>
+                        </tr>
+                        <tr>
+                            <th>Nationality:</th>
+                            <td>Indian</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="education" data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <h2>Education</h2>
+                <div class="timeline-section">
+                    <div class="timeline">
+                        <div class="event">
+                            <div class="circle"></div>
+                            <div class="content1">
+                                <h3>2022-2023</h3>
+                                <p>JAVA FULL STACK TECHINOCAL COURSE</p>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="circle"></div>
+                            <div class="content1">
+                                <h3>2019-2022</h3>
+                                <p>BSC(computer Science)</p>
+                                <p>percentage: 83.82</p>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="circle"></div>
+                            <div class="content1">
+                                <h3>2018-2019</h3>
+                                <p>HSC</p>
+                                <p>Percentage: 55.38 </p>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="circle"></div>
+                            <div class="content1">
+                                <h3>2016-2017</h3>
+                                <p>SSC</p>
+                                <p>Percentage: 79.60</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="heading-title">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="skills">
+            <div class="progress-bar1 bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-aos="fade-up"
+            data-aos-duration="1500">
+                50%<br>JAVA</div>
+            <div class="progress-bar3 bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"data-aos="fade-up"
+     data-aos-duration="2000">
+                80%<br>HTML</div>
+            <div class="progress-bar1 bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"data-aos="fade-up"
+     data-aos-duration="2500">
+                50%<br>CSS</div>
+            <div class="progress-bar2 bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"data-aos="fade-up"
+     data-aos-duration="3000">
+                60%<br>MYSQL</div>
+            <div class="progress-bar1 bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"data-aos="fade-up"
+     data-aos-duration="3000">
+                50%<br>ADV JAVA</div>
+            <div class="progress-bar3 bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"data-aos="fade-up"
+     data-aos-duration="3000">
+                80%<br>CHAT GPT</div>
+        </div>
+    </section>
+
+    <section class="head2" id="portfolio">
+        <div class="heading-title">
+            <div class="h2">MY</div>
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="portfolio">
+
+            <div class="card">
+                <img src="./img/landing_img.png" alt=""  data-aos="zoom-in-down"  data-aos-duration="1500">
+                <p>Create A Sample Landing Page</p>
+            
+            </div>
+            <div class="card">
+                <img src="./img/tribute_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="2000">
+                <p>Elon Musk Tribute Page</p>
+            </div>
+            <div class="card">
+                <img src="./img/calculator_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="3000">
+                <p>Calculator App</p>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="1500">
+                <p>Personal Portfolio 1</p>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio2_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="2000">
+                <p>Personal Portfolio 2</p>
+            </div>
+            <div class="card">
+                <img src="./img/busibud_web_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="3000">
+                <p>Sample Website</p>
+            </div>
+            <div class="card">
+                <img src="./img/small_business_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="1500">
+                <p>Sample Business Website</p>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio3_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="2000">
+                <p>Personal Portfolio 3</p>
+            </div>
+            <div class="card">
+                <img src="./img/company_team_prof_img.png" alt="" data-aos="zoom-in-down"  data-aos-duration="3000">
+                <p>Sample Company Profile</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="head" id="contact">
+        <div class="heading-title">
+            <div class="h2">GET IN </div>
+            <h2>TOUCH</h2>
+        </div>
+
+        <div class="contact">
+            <div class="address">
+                <h2>DON'T BE SHY !</h2>
+                <p>Feel free to get in touch with me.I am always open <br> to discussing new projects,<br>
+                    creative ideas or opportunities to be part of your visions.</p>
+                <div class="add">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="title">Address</span> 
+                    <span>Chakan, Pune.410501</span>
+                </div>
+                <div class="add">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="title">Mail Me</span>
+                    <span>Adityachatur7996@gmail.com</span>
+                </div>
+                <div class="add">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="title">Call Me</span>
+                    <span>+91 9552314201</span>
+                </div>
+               <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+               </div>
+            </div>
+            <div class="comments">
+                <form action="">
+                    <input class="form-input name" type="text" id="first-name" placeholder="Enter First Name" name="first-name" required> &nbsp;
+                    <input class="form-input name" type="text" id="first-name" name="first-name" placeholder="Enter Last Name"><br><br>
+                    <input class="form-input mail" type="text" id="first-name" name="first-name" placeholder="Enter Email Id" required><br><br>
+                    <textarea rows="8" cols="80" class="comm" placeholder="Enter Your Message He..."></textarea>
+                    <button class="btn btn-slide-left">Send Me Message</button>
+                </form>
+                
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="./main.js"></script>
+</body>
+
+</html>
