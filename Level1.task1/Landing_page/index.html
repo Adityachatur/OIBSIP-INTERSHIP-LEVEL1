@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/66dcd5c2ff.js" crossorigin="anonymous"></script>
+  <!-- Aos  css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Aos Js  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <img src="./img/logo.png" class="navbar-logo" alt="">
+    <!-- <div class="navbar-logo">Your Logo</div> -->
+    <div class="navbar-items" id="navbarItems">
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="navbar-toggle" id="navbarToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Home section start -->
+
+  <section class="background-section" id="home">
+
+    <div class="content">
+      <h2>Welcome to Landing Page</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Quisquam, blanditiis?</p>
+      <button type="submit">REGISTER NOW</button>
+    </div>
+  </section>
+  <!-- Home section end -->
+
+
+  <!-- card ection start -->
+  <section class="section2" id="about">
+
+    <h2>SECTION HEADING</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, rem tenetur.<br> At illo provident consequatur
+      assumenda praesentium eos a quia.</P>
+    <div class="card-container">
+      <div class="card"  data-aos="zoom-in-down" data-aos-duration="1000">
+        <img src="./img/card-img3.png" alt="Card 1">
+
+
+        <h4>AMERICA</h4>
+        <P>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ullam, quis.</P>
+
+
+      </div>
+      <div class="card"  data-aos="zoom-in-down" data-aos-duration="2000">
+        <img src="./img/card-img2.png" alt="Card 2">
+        <h4>ASIA </h4>
+        <P>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam, quis.</P>
+      </div>
+      <div class="card"  data-aos="zoom-in-down" data-aos-duration="3000">
+        <img src="./img/card-img1.png" alt="Card 3">
+        <h4>AUSTRALIA</h4>
+        <P>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ullam, quis.</P>
+      </div>
+    </div>
+  </section>
+  <!-- card section end -->
+
+  <!-- statistics section start -->
+  <section class="section3 statistics" id="services">
+
+    <h2>SECTION HEADING</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, rem tenetur.<br> At illo provident consequatur
+      assumenda praesentium eos a quia.</P>
+    <div class="card-container">
+      <div class="card" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
+
+
+
+        <h1>1240+</h1>
+        <P>Clud</P>
+
+
+      </div>
+      <div class="card" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+
+        <h1>2000 </h1>
+        <P>Active Member</P>
+      </div>
+      <div class="card" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000">
+
+        <h1>1.000+</h1>
+        <P>Community</P>
+      </div>
+    </div>
+  </section>
+  <!-- statistics section end -->
+
+
+  <!-- subscribe section start -->
+
+  <section class="section3 subscribe" id="contact">
+
+    <h2>SECTION HEADING</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, rem tenetur.<br> At illo provident consequatur
+      assumenda praesentium eos a quia.</P>
+   
+
+      <div class="search" data-aos="flip-up" data-aos-duration="1000">
+
+        <input type="text" placeholder="Enter Email"><label for=""><button type="submit">SUBSCRIBE</button></label>
+      </div>
+  </section>
+
+
+    <!-- subscribe section end -->
+
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer-section">
+        <div class="music">
+          <h3>MUSICOLOGY</h3>
+          <ul>
+          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Animi quas nobis sequi cupiditate totam mollitia!</li>
+          <i class="fa-brands fa-instagram"></i>   <i class="fa-brands fa-facebook"></i>   <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          </ul>
+        </div>
+       
+      </div>
+      <div class="footer-section">
+        <h3>ABOUT</h3>
+        <ul>
+          <li>History </li>
+          <li>Our Team</li>
+          <li>Brand Guidelines</li>
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>SERVICE</h3>
+        <ul>
+          <li>How to Order</li>
+          <li>Our Product</li>
+          <li>Order Status</li>
+          <li>Promo</li>
+          <li>Payment Method</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>OTHER</h3>
+        <ul>
+          <li>Contact us</li>
+          <li>Help</li>
+          <li>privacy</li>
+        </ul>
+      </div>
+    </footer>
+    
+
+    <!-- footer end -->
+
+  <script>
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navbarItems = document.getElementById('navbarItems');
+
+    navbarToggle.addEventListener('click', () => {
+      navbarItems.classList.toggle('active');
+
+    });
+
+
+    AOS.init();
+  </script>
+</body>
+
+</html>
