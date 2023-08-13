@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="inputs" disabled>
+        <div class="buttons">
+            <button class="operator" onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="backspace()">&#9003;</button>
+            <button onclick="appendToDisplay('%')">%</button>
+            <button onclick="appendToDisplay('/')">/</button><br>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button><br>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button><br>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button><br>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button>
+        </div>
+        <div class="history">
+            <h2 onclick="toggleHistory()">History</h2>
+            <ul id="historyList">
+
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script>
+        let displayValue = "";
+        let history = [];
+  
+        function appendToDisplay(value) {
+            if (displayValue.length < 15) {
+                displayValue += value;
+                document.getElementById("display").value = displayValue;
+            }
+        }
+
+        function appendToDisplay(value) {
+            displayValue += value;
+            document.getElementById("display").value = displayValue;
+        }
+
+        function clearDisplay() {
+            displayValue = '';
+            document.getElementById("display").value = displayValue;
+
+        }
+        function backspace() {
+            displayValue = displayValue.slice(0, -1);
+            document.getElementById("display").value = displayValue;
+        }
+        function calculate() {
+            try {
+                const result = eval(displayValue);
+                document.getElementById("display").value = result;
+                history.push(`${displayValue} = ${result}`);
+                displayValue = '';
+                updateHistory();
+                toggleHistory();
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+        function updateHistory() {
+            const historyList = document.getElementById("historyList");
+            historyList.innerHTML = '';
+
+            for (let i = 0; i < history.length; i++) {
+                const listItem = document.createElement('li');
+                listItem.textContent = history[i];
+                historyList.appendChild(listItem);
+            }
+        }
+
+        function toggleHistory() {
+            const historyList = document.getElementById("historyList");
+            if (historyList.style.display === "none") {
+                historyList.style.display = "block";
+            } else {
+                historyList.style.display = "none";
+            }
+        }
+
+        function handleKeyboardInput(event) {
+            const keyValue = event.key;
+            if (!isNaN(keyValue) || keyValue === '.' || keyValue === '+' || keyValue === '-' || keyValue === '*' || keyValue === '/') {
+                appendToDisplay(keyValue);
+            } else if (keyValue === 'Enter') {
+                calculate();
+            } else if (keyValue === 'Delete') {
+                clearDisplay();
+            } else if (keyValue === 'Backspace') {
+                backspace();
+            }
+        }
+
+
+        document.addEventListener('keydown', handleKeyboardInput);
+    </script>
+</body>
+
+</html>

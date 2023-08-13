@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Oswald:wght@300;500;600;700&family=Roboto+Slab:wght@300;700;900&family=Roboto:ital,wght@0,400;0,500;1,700;1,900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(33, 36, 41);
+}
+
+.calculator {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(9, 94, 127);
+}
+.calculator .inputs{
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    background-color: rgb(208, 208, 208);
+    border-radius: 10px;
+    color: black;
+}
+#display {
+    width: 250px;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    width: 53px;
+    height: 53px;
+    font-size: 24px;
+    margin:3px 5px 2px 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(178, 178, 178, 0.948);
+}
+
+.buttons button:hover{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.operator {
+    background-color: #f39c12 !important;
+}
+#historyList{
+    list-style: none;
+    font-size: 14px;
+    font-family: 'roboto';
+    color: white;
+}
