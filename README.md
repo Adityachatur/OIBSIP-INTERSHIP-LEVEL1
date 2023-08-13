@@ -23,3 +23,17 @@ Welcome to our awesome website! We've built a fantastic landing page using HTML,
 <a href="https://adityachatur.github.io/Temprature_Calculator.github.io/">Website Link</a>
 </p>
 
+
+
+<h1 align="left">Level2.Task 1 -(Calculator)</h1>
+<h4 align="left"> Building a Basic Calculator with HTML, CSS, and JavaScript. Learn how to make a simple calculator using HTML for the layout, CSS for its look, and JavaScript for making it work. Easy steps for creating your own calculator!
+</h4>
+<a href="https://adityachatur.github.io/Matematical_calculator.github.io/">Website Link</a>
+</p>
+
+
+<h1 align="left">Level2.Task 2 -( Tribute Page)</h1>
+<h4 align="left">Check out my Elon Musk Tribute Page! It's a website I made using HTML, CSS, and JavaScript. Learn about Elon Musk, his cool stuff like SpaceX and Tesla, and how he's changing the world. Come celebrate this amazing guy with me!
+</h4>
+<a href="https://adityachatur.github.io/Elon_Musl_Tribute_page.github.ip/">Website Link</a>
+</p>
